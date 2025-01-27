@@ -1,6 +1,10 @@
 package sleuth
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/dwdwow/goalb/addrs"
+)
 
 func TestMetaSleuthClient(t *testing.T) {
 	c := DefaultClient()
@@ -21,17 +25,24 @@ func TestMetaSleuthClientGetAddressLabels(t *testing.T) {
 }
 
 func TestMetaSleuthClientGetBatchLabels(t *testing.T) {
+	m := addrs.SolBinance
+	var addrs []string
+	for _, v := range m {
+		addrs = append(addrs, v)
+	}
 	c := DefaultClient()
-	labels, err := c.GetBatchLabels(-3, "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM", "5tzFkiKscXHK5ZXCGbXZxdw7gTjjD1mBwuoFbhUvuAi9")
+	labels, err := c.GetBatchLabels(-3, addrs...)
 	if err != nil {
 		t.Fatal(err)
 	}
-	t.Logf("%+v\n", labels)
+	for _, v := range labels {
+		t.Logf("%+v\n", v)
+	}
 }
 
 func TestMetaSleuthClientGetEntity(t *testing.T) {
 	c := DefaultClient()
-	entity, err := c.GetEntity("Binance")
+	entity, err := c.GetEntity("Wintermute")
 	if err != nil {
 		t.Fatal(err)
 	}
