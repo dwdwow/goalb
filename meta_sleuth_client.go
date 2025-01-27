@@ -118,6 +118,68 @@ var MetaSleuthSupportedChains = []MetaSleuthSupportedChain{
 	{ChainId: 1313161554, ChainName: "AURORA"},
 }
 
+var MetaSleuthChainId = map[ChainName]int{
+	"SOLANA":            -3,
+	"TRON":              -2,
+	"BITCOIN":           -1,
+	"ETHEREUM":          1,
+	"OPTIMISM":          10,
+	"CRONOS":            25,
+	"BNB SMART CHAIN":   56,
+	"GNOSIS":            100,
+	"POLYGON":           137,
+	"MANTA PACIFIC":     169,
+	"BITTORRENT":        199,
+	"FANTOM OPERA":      250,
+	"BOBA":              288,
+	"ZKSYNC":            324,
+	"CLV PARACHAIN":     1024,
+	"POLYGON ZKEVM":     1101,
+	"WEMIX3.0 MAINNET":  1111,
+	"MOONBEAM":          1284,
+	"MOONRIVER":         1285,
+	"MANTLE":            5000,
+	"BASE":              8453,
+	"ARBITRUM ONE":      42161,
+	"CELO":              42220,
+	"AVALANCHE C-CHAIN": 43114,
+	"LINEA":             59144,
+	"BLAST":             81457,
+	"AURORA":            1313161554,
+}
+
+type ChainName string
+
+const (
+	ChainNameSolana          ChainName = "SOLANA"
+	ChainNameTron            ChainName = "TRON"
+	ChainNameBitcoin         ChainName = "BITCOIN"
+	ChainNameEthereum        ChainName = "ETHEREUM"
+	ChainNameOptimism        ChainName = "OPTIMISM"
+	ChainNameCronos          ChainName = "CRONOS"
+	ChainNameBNBSmartChain   ChainName = "BNB SMART CHAIN"
+	ChainNameGnosis          ChainName = "GNOSIS"
+	ChainNamePolygon         ChainName = "POLYGON"
+	ChainNameMantaPacific    ChainName = "MANTA PACIFIC"
+	ChainNameBittorrent      ChainName = "BITTORRENT"
+	ChainNameFantomOpera     ChainName = "FANTOM OPERA"
+	ChainNameBoba            ChainName = "BOBA"
+	ChainNameZksync          ChainName = "ZKSYNC"
+	ChainNameClvParachain    ChainName = "CLV PARACHAIN"
+	ChainNamePolygonZkevm    ChainName = "POLYGON ZKEVM"
+	ChainNameWemix           ChainName = "WEMIX3.0 MAINNET"
+	ChainNameMoonbeam        ChainName = "MOONBEAM"
+	ChainNameMoonriver       ChainName = "MOONRIVER"
+	ChainNameMantle          ChainName = "MANTLE"
+	ChainNameBase            ChainName = "BASE"
+	ChainNameArbitrumOne     ChainName = "ARBITRUM ONE"
+	ChainNameCelo            ChainName = "CELO"
+	ChainNameAvalancheCChain ChainName = "AVALANCHE C-CHAIN"
+	ChainNameLinea           ChainName = "LINEA"
+	ChainNameBlast           ChainName = "BLAST"
+	ChainNameAurora          ChainName = "AURORA"
+)
+
 type MetaSleuthClient struct {
 	Header  http.Header
 	Limiter *golimiter.ReqLimiter
