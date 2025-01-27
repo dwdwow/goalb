@@ -160,86 +160,86 @@ const (
 )
 
 type Resp[D any] struct {
-	RequestId string      `json:"request_id"`
-	Code      RespErrCode `json:"code"`
-	Message   string      `json:"message"`
-	Data      D           `json:"data"`
+	RequestId string      `json:"request_id" bson:"request_id"`
+	Code      RespErrCode `json:"code" bson:"code"`
+	Message   string      `json:"message" bson:"message"`
+	Data      D           `json:"data" bson:"data"`
 }
 
 type SupportedChain struct {
-	ChainId   ChainID   `json:"chain_id"`
-	ChainName ChainName `json:"chain_name"`
+	ChainId   ChainID   `json:"chain_id" bson:"chain_id"`
+	ChainName ChainName `json:"chain_name" bson:"chain_name"`
 }
 
 type EntityCategory struct {
-	Name string `json:"name"`
-	Code int    `json:"code"`
+	Name string `json:"name" bson:"name"`
+	Code int    `json:"code" bson:"code"`
 }
 
 type EntityAttribute struct {
-	Name     string   `json:"name"`
-	Code     int      `json:"code"`
-	CompInfo []string `json:"comp_info"`
+	Name     string   `json:"name" bson:"name"`
+	Code     int      `json:"code" bson:"code"`
+	CompInfo []string `json:"comp_info" bson:"comp_info"`
 }
 
 type EntityDescription struct {
-	Attributes []EntityAttribute `json:"attributes"`
-	Website    string            `json:"website"`
-	Twitter    string            `json:"twitter"`
-	Telegram   string            `json:"telegram"`
-	Discord    string            `json:"discord"`
+	Attributes []EntityAttribute `json:"attributes" bson:"attributes"`
+	Website    string            `json:"website" bson:"website"`
+	Twitter    string            `json:"twitter" bson:"twitter"`
+	Telegram   string            `json:"telegram" bson:"telegram"`
+	Discord    string            `json:"discord" bson:"discord"`
 }
 
 type Entity struct {
-	Entity      string            `json:"entity"`
-	Categories  []EntityCategory  `json:"categories"`
-	Attributes  []EntityAttribute `json:"attributes"`
-	Description EntityDescription `json:"description"`
+	Entity      string            `json:"entity" bson:"entity"`
+	Categories  []EntityCategory  `json:"categories" bson:"categories"`
+	Attributes  []EntityAttribute `json:"attributes" bson:"attributes"`
+	Description EntityDescription `json:"description" bson:"description"`
 }
 
 type AddressLabel struct {
-	ChainId        int               `json:"chain_id"`
-	Address        string            `json:"address"`
-	MainEntity     string            `json:"main_entity"`
-	MainEntityInfo Entity            `json:"main_entity_info"`
-	CompEntities   []string          `json:"comp_entities"`
-	Attributes     []EntityAttribute `json:"attributes"`
-	NameTag        string            `json:"name_tag"`
+	ChainId        int               `json:"chain_id" bson:"chain_id"`
+	Address        string            `json:"address" bson:"address"`
+	MainEntity     string            `json:"main_entity" bson:"main_entity"`
+	MainEntityInfo Entity            `json:"main_entity_info" bson:"main_entity_info"`
+	CompEntities   []string          `json:"comp_entities" bson:"comp_entities"`
+	Attributes     []EntityAttribute `json:"attributes" bson:"attributes"`
+	NameTag        string            `json:"name_tag" bson:"name_tag"`
 }
 
 type OneChainSeveralAddressesLabel struct {
-	ChainId   int            `json:"chain_id"`
-	Addresses []AddressLabel `json:"addresses"`
+	ChainId   ChainID        `json:"chain_id" bson:"chain_id"`
+	Addresses []AddressLabel `json:"addresses" bson:"addresses"`
 }
 
 var SupportedChains = []SupportedChain{
-	{ChainId: -3, ChainName: "SOLANA"},
-	{ChainId: -2, ChainName: "TRON"},
-	{ChainId: -1, ChainName: "BITCOIN"},
-	{ChainId: 1, ChainName: "ETHEREUM"},
-	{ChainId: 10, ChainName: "OPTIMISM"},
-	{ChainId: 25, ChainName: "CRONOS"},
-	{ChainId: 56, ChainName: "BNB SMART CHAIN"},
-	{ChainId: 100, ChainName: "GNOSIS"},
-	{ChainId: 137, ChainName: "POLYGON"},
-	{ChainId: 169, ChainName: "MANTA PACIFIC"},
-	{ChainId: 199, ChainName: "BITTORRENT"},
-	{ChainId: 250, ChainName: "FANTOM OPERA"},
-	{ChainId: 288, ChainName: "BOBA"},
-	{ChainId: 324, ChainName: "ZKSYNC"},
-	{ChainId: 1024, ChainName: "CLV PARACHAIN"},
-	{ChainId: 1101, ChainName: "POLYGON ZKEVM"},
-	{ChainId: 1111, ChainName: "WEMIX3.0 MAINNET"},
-	{ChainId: 1284, ChainName: "MOONBEAM"},
-	{ChainId: 1285, ChainName: "MOONRIVER"},
-	{ChainId: 5000, ChainName: "MANTLE"},
-	{ChainId: 8453, ChainName: "BASE"},
-	{ChainId: 42161, ChainName: "ARBITRUM ONE"},
-	{ChainId: 42220, ChainName: "CELO"},
-	{ChainId: 43114, ChainName: "AVALANCHE C-CHAIN"},
-	{ChainId: 59144, ChainName: "LINEA"},
-	{ChainId: 81457, ChainName: "BLAST"},
-	{ChainId: 1313161554, ChainName: "AURORA"},
+	{ChainId: ChainIDSolana, ChainName: ChainNameSolana},
+	{ChainId: ChainIDTron, ChainName: ChainNameTron},
+	{ChainId: ChainIDBitcoin, ChainName: ChainNameBitcoin},
+	{ChainId: ChainIDEthereum, ChainName: ChainNameEthereum},
+	{ChainId: ChainIDOptimism, ChainName: ChainNameOptimism},
+	{ChainId: ChainIDCronos, ChainName: ChainNameCronos},
+	{ChainId: ChainIDBNBSmartChain, ChainName: ChainNameBNBSmartChain},
+	{ChainId: ChainIDGnosis, ChainName: ChainNameGnosis},
+	{ChainId: ChainIDPolygon, ChainName: ChainNamePolygon},
+	{ChainId: ChainIDMantaPacific, ChainName: ChainNameMantaPacific},
+	{ChainId: ChainIDBittorrent, ChainName: ChainNameBittorrent},
+	{ChainId: ChainIDFantomOpera, ChainName: ChainNameFantomOpera},
+	{ChainId: ChainIDBoba, ChainName: ChainNameBoba},
+	{ChainId: ChainIDZksync, ChainName: ChainNameZksync},
+	{ChainId: ChainIDClvParachain, ChainName: ChainNameClvParachain},
+	{ChainId: ChainIDPolygonZkevm, ChainName: ChainNamePolygonZkevm},
+	{ChainId: ChainIDWemix, ChainName: ChainNameWemix},
+	{ChainId: ChainIDMoonbeam, ChainName: ChainNameMoonbeam},
+	{ChainId: ChainIDMoonriver, ChainName: ChainNameMoonriver},
+	{ChainId: ChainIDMantle, ChainName: ChainNameMantle},
+	{ChainId: ChainIDBase, ChainName: ChainNameBase},
+	{ChainId: ChainIDArbitrumOne, ChainName: ChainNameArbitrumOne},
+	{ChainId: ChainIDCelo, ChainName: ChainNameCelo},
+	{ChainId: ChainIDAvalancheCChain, ChainName: ChainNameAvalancheCChain},
+	{ChainId: ChainIDLinea, ChainName: ChainNameLinea},
+	{ChainId: ChainIDBlast, ChainName: ChainNameBlast},
+	{ChainId: ChainIDAurora, ChainName: ChainNameAurora},
 }
 
 type Client struct {
