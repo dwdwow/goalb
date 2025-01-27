@@ -1,4 +1,4 @@
-package goalb
+package sleuth
 
 import (
 	"bytes"
