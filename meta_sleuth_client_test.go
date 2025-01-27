@@ -13,7 +13,7 @@ func TestMetaSleuthClient(t *testing.T) {
 
 func TestMetaSleuthClientGetAddressLabels(t *testing.T) {
 	c := NewDefaultMetaSleuthClient()
-	labels, err := c.GetAddressLabels(-3, "44W73kGYQgXCTNkGxUmHv8DDBPCxojBcX49uuKmbFc9U")
+	labels, err := c.GetAddressLabels(-3, "CS94dE2znqTYxcFtfdfpsEjkphBdsVZeVKhLoykMX7Ge")
 	if err != nil {
 		t.Fatal(err)
 	}
