@@ -25,10 +25,10 @@ func TestMetaSleuthClientGetAddressLabels(t *testing.T) {
 }
 
 func TestMetaSleuthClientGetBatchLabels(t *testing.T) {
-	m := addrs.SolBinance
+	m := addrs.Sol
 	var addrs []string
 	for _, v := range m {
-		addrs = append(addrs, v)
+		addrs = append(addrs, v.Address)
 	}
 	c := DefaultClient()
 	labels, err := c.GetBatchLabels(-3, addrs...)
