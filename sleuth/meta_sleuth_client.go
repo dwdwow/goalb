@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"log/slog"
 	"net/http"
@@ -159,6 +160,39 @@ const (
 	InternalError         RespErrCode = 500000
 )
 
+var (
+	ErrUnauthorizedOperation error = errors.New("metasleuth: unauthorized operation")
+	ErrRateLimitExceeded     error = errors.New("metasleuth: rate limit exceeded")
+	ErrInvalidParams         error = errors.New("metasleuth: invalid params")
+	ErrUserNotExist          error = errors.New("metasleuth: user not exist")
+	ErrServerBusy            error = errors.New("metasleuth: server busy")
+	ErrInvalidAPIKey         error = errors.New("metasleuth: invalid api key")
+	ErrInvalidAuthFormat     error = errors.New("metasleuth: invalid auth format")
+	ErrExpiredAPIKey         error = errors.New("metasleuth: expired api key")
+	ErrNotFound              error = errors.New("metasleuth: not found")
+	ErrInvalidAddress        error = errors.New("metasleuth: invalid address")
+	ErrDailyLimitExceeded    error = errors.New("metasleuth: daily limit exceeded")
+	ErrUnsupportedChain      error = errors.New("metasleuth: unsupported chain")
+	ErrInternalError         error = errors.New("metasleuth: internal error")
+)
+
+var CodeToErr = map[RespErrCode]error{
+	Success:               nil,
+	UnauthorizedOperation: ErrUnauthorizedOperation,
+	RateLimitExceeded:     ErrRateLimitExceeded,
+	InvalidParams:         ErrInvalidParams,
+	UserNotExist:          ErrUserNotExist,
+	ServerBusy:            ErrServerBusy,
+	InvalidAPIKey:         ErrInvalidAPIKey,
+	InvalidAuthFormat:     ErrInvalidAuthFormat,
+	ExpiredAPIKey:         ErrExpiredAPIKey,
+	NotFound:              ErrNotFound,
+	InvalidAddress:        ErrInvalidAddress,
+	DailyLimitExceeded:    ErrDailyLimitExceeded,
+	UnsupportedChain:      ErrUnsupportedChain,
+	InternalError:         ErrInternalError,
+}
+
 type Resp[D any] struct {
 	RequestId string      `json:"request_id" bson:"request_id"`
 	Code      RespErrCode `json:"code" bson:"code"`
@@ -309,10 +343,11 @@ func req[D any](c *Client, method string, path string, body map[string]any) (D, 
 	if err := decoder.Decode(&respData); err != nil {
 		return *new(D), fmt.Errorf("metasleuth: decode response failed: %w", err)
 	}
-	if resp.StatusCode != http.StatusOK {
-		return *new(D), fmt.Errorf("metasleuth: status code: %d, error code: %d, message: %s", resp.StatusCode, respData.Code, respData.Message)
+	co := respData.Code
+	if err, ok := CodeToErr[co]; ok {
+		return respData.Data, err
 	}
-	return respData.Data, nil
+	return respData.Data, fmt.Errorf("metasleuth: status code: %d, error code: %d, message: %s", resp.StatusCode, respData.Code, respData.Message)
 }
 
 func (c *Client) GetSupportedChains() ([]SupportedChain, error) {
