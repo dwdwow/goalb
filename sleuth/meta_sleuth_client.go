@@ -279,7 +279,7 @@ func New(apiKey string, limiter *golimiter.ReqLimiter, logger *slog.Logger) *Cli
 
 var defaultClient *Client = New("", nil, nil)
 
-func NewDefaultClient() *Client {
+func DefaultClient() *Client {
 	return defaultClient
 }
 
