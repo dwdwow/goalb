@@ -121,13 +121,13 @@ var Sol map[string]labels.AddressLabels = map[string]labels.AddressLabels{
 	},
 	"CW9C7HBwAMgqNdXkNgFg9Ujr3edR2Ab9ymEuQnVacd1A": {
 		Address: "CW9C7HBwAMgqNdXkNgFg9Ujr3edR2Ab9ymEuQnVacd1A",
-		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_COINBASE, labels.SOL_STAKING, "solscan: Coinbase 02"},
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_COINBASE, labels.HOT_WALLET, "solscan: Coinbase 02"},
 		Grade:   labels.LabelGradeStrict,
 		Remark:  "from solscan",
 	},
 	"9W3QTgBhkU4Bwg6cwnDJo6eGZ9BtZafSdu1Lo9JmWws7": {
 		Address: "9W3QTgBhkU4Bwg6cwnDJo6eGZ9BtZafSdu1Lo9JmWws7",
-		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_COINBASE, labels.SOL_STAKING, "solscan: Coinbase 03"},
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_COINBASE, labels.HOT_WALLET, "solscan: Coinbase 03"},
 		Grade:   labels.LabelGradeStrict,
 		Remark:  "from solscan",
 	},
