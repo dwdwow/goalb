@@ -275,6 +275,13 @@ var Sol map[string]labels.AddressLabels = map[string]labels.AddressLabels{
 		Grade:   labels.LabelGradeStrict,
 		Remark:  "from solscan",
 	},
+	// hold many tokens and rank top, just transfer with kucoin hot wallet, but not be labeled by solscan
+	"GL8T72PKygWaYrLKtSteN9UUvYYnuC8azNDunk4eaqqQ": {
+		Address: "GL8T72PKygWaYrLKtSteN9UUvYYnuC8azNDunk4eaqqQ",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_KUCOIN, labels.HOT_WALLET},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
 
 	// Huobi
 	"88xTWZMeKfiTgbfEmPLdsUCQcZinwUfk25EBQZ21XMAZ": {
@@ -340,6 +347,27 @@ var Sol map[string]labels.AddressLabels = map[string]labels.AddressLabels{
 	"FxteHmLwG9nk1eL4pjNve3Eub2goGkkz6g6TbvdmW46a": {
 		Address: "FxteHmLwG9nk1eL4pjNve3Eub2goGkkz6g6TbvdmW46a",
 		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_BITFINEX, labels.HOT_WALLET, "solscan: Bitfinex"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+
+	// Crypto.com
+	"6FEVkH17P9y8Q9aCkDdPcMDjvj7SVxrTETaYEm8f51Jy": {
+		Address: "6FEVkH17P9y8Q9aCkDdPcMDjvj7SVxrTETaYEm8f51Jy",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_CRYPTOCOM, labels.HOT_WALLET, "solscan: Crypto.com 1"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"AobVSwdW9BbpMdJvTqeCN4hPAmh4rHm7vwLnQ5ATSyrS": {
+		Address: "AobVSwdW9BbpMdJvTqeCN4hPAmh4rHm7vwLnQ5ATSyrS",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_CRYPTOCOM, labels.HOT_WALLET, "solscan: Crypto.com 2"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	// hold many tokens and rank top, get tokens from crypto.com hot wallet, but not be labeled by solscan
+	"HqqzZC5qsNKtZBrBsYvbXhzxUQaADSzkDaifHWe1GvEH": {
+		Address: "HqqzZC5qsNKtZBrBsYvbXhzxUQaADSzkDaifHWe1GvEH",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_CRYPTOCOM, labels.HOT_WALLET},
 		Grade:   labels.LabelGradeStrict,
 		Remark:  "from solscan",
 	},
@@ -570,6 +598,141 @@ var Sol map[string]labels.AddressLabels = map[string]labels.AddressLabels{
 		Remark:  "from solscan",
 	},
 
+	// Raydium
+	"8pFhUqCU7Fkxfg2DLytRDf7a9oK4XGtN92PrYwtVQc6G": {
+		Address: "8pFhUqCU7Fkxfg2DLytRDf7a9oK4XGtN92PrYwtVQc6G",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Treasury"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg": {
+		Address: "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Pump.fun: Raydium Migration"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"RaydiumJDX8X6om6Fg44xyqz5eukZ9KC3LX61SttLbH": {
+		Address: "RaydiumJDX8X6om6Fg44xyqz5eukZ9KC3LX61SttLbH",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.DEX, labels.DEX_RAYDIUM, labels.SOL_STAKING_VOTE, "solscan: Raydium Validator Vote Account"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"BihEG2r7hYax6EherbRmuLLrySBuSXx4PYGd9gAsktKY": {
+		Address: "BihEG2r7hYax6EherbRmuLLrySBuSXx4PYGd9gAsktKY",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium (RAY) Stake Reward Account"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"4qD717qKoj3Sm8YfHMSR7tSKjWn5An817nArA6nGdcUR": {
+		Address: "4qD717qKoj3Sm8YfHMSR7tSKjWn5An817nArA6nGdcUR",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium (RAY) Stake Pool Authority"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"vvvvbtDs9HsdsE6NskZMnb1RA6muoud1ChQuiF9QhSM": {
+		Address: "vvvvbtDs9HsdsE6NskZMnb1RA6muoud1ChQuiF9QhSM",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.DEX, labels.DEX_RAYDIUM, labels.SOL_STAKING, "solscan: Raydium Validator"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"GThUX1Atko4tqhN2NaiTazWSeFWMuiUvfFnyJyUghFMJ": {
+		Address: "GThUX1Atko4tqhN2NaiTazWSeFWMuiUvfFnyJyUghFMJ",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Upgrade Authority"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"FPjtrk724AM9GuCCUZg4vqGDjB7L42LNPsYbbVzbZBXz": {
+		Address: "FPjtrk724AM9GuCCUZg4vqGDjB7L42LNPsYbbVzbZBXz",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, labels.SOL_STAKING_STAKE_NET_ADDRESS, "solscan: Raydium Validator StakeNet Address"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"AgJddDJLt17nHyXDCpyGELxwsZZQPqfUsuwzoiqVGJwD": {
+		Address: "AgJddDJLt17nHyXDCpyGELxwsZZQPqfUsuwzoiqVGJwD",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium LP Exploiter's Account"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	// programs
+	"EhhTKczWMGQt46ynNeRX1WfeagwwJd7ufHvCDjRxjo5Q": {
+		Address: "EhhTKczWMGQt46ynNeRX1WfeagwwJd7ufHvCDjRxjo5Q",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Stake"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"9HzJyW1qZsEiSfMUf6L2jo3CcTKAyBmSyKdwQeYisHrC": {
+		Address: "9HzJyW1qZsEiSfMUf6L2jo3CcTKAyBmSyKdwQeYisHrC",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium IDO"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK": {
+		Address: "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Concentrated Liquidity"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS": {
+		Address: "routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium AMM Routing"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1": {
+		Address: "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Authority V4"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"FarmqiPv5eAj3j1GMdMCMUGXqPUvmquZtMy86QH6rzhG": {
+		Address: "FarmqiPv5eAj3j1GMdMCMUGXqPUvmquZtMy86QH6rzhG",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium ecosystem farm"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"CBuCnLe26faBpcBP2fktp4rp8abpcAnTWft6ZrP5Q4T": {
+		Address: "CBuCnLe26faBpcBP2fktp4rp8abpcAnTWft6ZrP5Q4T",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Stake V4"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"9KEPoZmtHUrBbhWN1v1KWLMkkvwY6WLtAVUCPRtRjP4z": {
+		Address: "9KEPoZmtHUrBbhWN1v1KWLMkkvwY6WLtAVUCPRtRjP4z",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Stake V5"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"5quBtoiQqxF9Jv6KYKctB59NT3gtJD2Y65kdnB1Uev3h": {
+		Address: "5quBtoiQqxF9Jv6KYKctB59NT3gtJD2Y65kdnB1Uev3h",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium liquidity pool AMM"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"27haf8L6oxUeXrHrgEgsexjSY5hbVUWEmvv9Nyxg8vQv": {
+		Address: "27haf8L6oxUeXrHrgEgsexjSY5hbVUWEmvv9Nyxg8vQv",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Liquidity Pool V3"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8": {
+		Address: "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Liquidity Pool V4"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr": {
+		Address: "RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium Liquidity Pool V2"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C": {
+		Address: "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_RAYDIUM, "solscan: Raydium CPMM"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+
 	// Orca
 	"82yxjeMsvaURa4MbZZ7WZZHfobirZYkH1zF8fmeGtyaQ": {
 		Address: "82yxjeMsvaURa4MbZZ7WZZHfobirZYkH1zF8fmeGtyaQ",
@@ -655,12 +818,12 @@ var Sol map[string]labels.AddressLabels = map[string]labels.AddressLabels{
 	},
 
 	// Pump.fun
-	"39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg": {
-		Address: "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg",
-		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.DEX, labels.DEX_PUMPFUN, "solscan: Pump.fun Raydium Migration"},
-		Grade:   labels.LabelGradeStrict,
-		Remark:  "from solscan",
-	},
+	// "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg": {
+	// 	Address: "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg",
+	// 	Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.DEX, labels.DEX_PUMPFUN, "solscan: Pump.fun Raydium Migration"},
+	// 	Grade:   labels.LabelGradeStrict,
+	// 	Remark:  "from solscan",
+	// },
 	"CebN5WGQ4jvEPvsVU4EoHEpgzq1VV7AbicfhtW4xC9iM": {
 		Address: "CebN5WGQ4jvEPvsVU4EoHEpgzq1VV7AbicfhtW4xC9iM",
 		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEX, labels.DEX_PUMPFUN, "solscan: Pump.fun Fee Account"},

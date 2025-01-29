@@ -1,0 +1,23 @@
+package labels
+
+const (
+	CEX           Label = "CEX"
+	CEX_BINANCE   Label = "CEX_BINANCE"
+	CEX_OKX       Label = "CEX_OKX"
+	CEX_COINBASE  Label = "CEX_COINBASE"
+	CEX_KRAKEN    Label = "CEX_KRAKEN"
+	CEX_BITGET    Label = "CEX_BITGET"
+	CEX_GATEIO    Label = "CEX_GATEIO"
+	CEX_BYBIT     Label = "CEX_BYBIT"
+	CEX_KUCOIN    Label = "CEX_KUCOIN"
+	CEX_HUOBI     Label = "CEX_HUOBI"
+	CEX_MEXC      Label = "CEX_MEXC"
+	CEX_FTX       Label = "CEX_FTX"
+	CEX_BITFINEX  Label = "CEX_BITFINEX"
+	CEX_BITMEX    Label = "CEX_BITMEX"
+	CEX_BITSTAMP  Label = "CEX_BITSTAMP"
+	CEX_CRYPTOCOM Label = "CEX_CRYPTOCOM"
+
+	MMK_WINTERMUTE  Label = "MMK_WINTERMUTE"
+	MMK_JUMP_CRYPTO Label = "MMK_JUMP_CRYPTO"
+)
