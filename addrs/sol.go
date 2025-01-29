@@ -974,4 +974,97 @@ var Sol map[string]labels.AddressLabels = map[string]labels.AddressLabels{
 		Grade:   labels.LabelGradeStrict,
 		Remark:  "from solscan",
 	},
+
+	// Kamino Accounts
+	"GKnHiWh3RRrE1zsNzWxRkomymHc374TvJPSTv2wPeYdB": {
+		Address: "GKnHiWh3RRrE1zsNzWxRkomymHc374TvJPSTv2wPeYdB",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Global Config"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"E35i5qn7872eEmBt15e5VGhziUBzCTm43XCSWvDoQNNv": {
+		Address: "E35i5qn7872eEmBt15e5VGhziUBzCTm43XCSWvDoQNNv",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Admin Authority"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"3v6ootgJJZbSWEDfZMA1scfh7wcsVVfeocExRxPqCyWH": {
+		Address: "3v6ootgJJZbSWEDfZMA1scfh7wcsVVfeocExRxPqCyWH",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Token Infos"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"3NJYftD5sjVfxSnUdZ1wVML8f3aC6mp1CXCL6L7TnU8C": {
+		Address: "3NJYftD5sjVfxSnUdZ1wVML8f3aC6mp1CXCL6L7TnU8C",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Scope Prices"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"B9spsrMK6pJicYtukaZzDyzsUQLgc3jbx5gHVwdDxb6y": {
+		Address: "B9spsrMK6pJicYtukaZzDyzsUQLgc3jbx5gHVwdDxb6y",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Reserve 2"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo": {
+		Address: "9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Reserve 1"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"81BgcfZuZf9bESLvw3zDkh7cZmMtDwTPgkCvYu7zx26o": {
+		Address: "81BgcfZuZf9bESLvw3zDkh7cZmMtDwTPgkCvYu7zx26o",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Reserve 3"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"GuWEkEJb5bh8Ai2gaYmZWMTUq8MrFeoaDZ89BrQfB1FZ": {
+		Address: "GuWEkEJb5bh8Ai2gaYmZWMTUq8MrFeoaDZ89BrQfB1FZ",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Reserve 4"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"BabJ4KTDUDqaBRWLFza3Ek3zEcjXaPDmeRGRwusQyLPS": {
+		Address: "BabJ4KTDUDqaBRWLFza3Ek3zEcjXaPDmeRGRwusQyLPS",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Token Authority"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"2bhkQ6uVn32ddiG4Fe3DVbLsrExdb3ubaY6i1G4szEmq": {
+		Address: "2bhkQ6uVn32ddiG4Fe3DVbLsrExdb3ubaY6i1G4szEmq",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Actions Authority"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"CommjpK7mVSaP9HwypJWAHmbxLgVGEaCSXMSt7AFs6Ps": {
+		Address: "CommjpK7mVSaP9HwypJWAHmbxLgVGEaCSXMSt7AFs6Ps",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Admin Authority"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"73a2yN8Qd4dN8g9RJBeHCUywMdXaKoh7LRuF7Gj9dL8Z": {
+		Address: "73a2yN8Qd4dN8g9RJBeHCUywMdXaKoh7LRuF7Gj9dL8Z",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Treasury Fee Vault Authority"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	// Programs
+	"6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc": {
+		Address: "6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Program"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"FarmsPZpWu9i7Kky8tPN37rs2TpmMrAZrC7S7vJa91Hr": {
+		Address: "FarmsPZpWu9i7Kky8tPN37rs2TpmMrAZrC7S7vJa91Hr",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Farm"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD": {
+		Address: "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_PROGRAM, labels.SOL_OFF_CURVE, labels.DEFI_KAMINO, "solscan: Kamino Lending Program"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
 }
