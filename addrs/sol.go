@@ -372,6 +372,26 @@ var Sol map[string]labels.AddressLabels = map[string]labels.AddressLabels{
 		Remark:  "from solscan",
 	},
 
+	// Backpack Exchange
+	"43DbAvKxhXh1oSxkJSqGosNw3HpBnmsWiak6tB5wpecN": {
+		Address: "43DbAvKxhXh1oSxkJSqGosNw3HpBnmsWiak6tB5wpecN",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_BACKPACK, labels.HOT_WALLET, "solscan: Backpack Exchange"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"2p6FY2frHSMX6TUYoLq6tFfAh1Q2ESn9HDzWDKFUQwDi": {
+		Address: "2p6FY2frHSMX6TUYoLq6tFfAh1Q2ESn9HDzWDKFUQwDi",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_BACKPACK, "solscan: Backpack Earthquake Aid"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+	"BbHG9GvPActFGogv3iNrpDAj4qpXr8t3jF16uGxXcKci": {
+		Address: "BbHG9GvPActFGogv3iNrpDAj4qpXr8t3jF16uGxXcKci",
+		Labels:  []labels.Label{labels.CHAIN_SOLANA, labels.SOL_ON_CURVE, labels.CEX, labels.CEX_BACKPACK, labels.HOT_WALLET, "solscan: Backpack Exchange 1"},
+		Grade:   labels.LabelGradeStrict,
+		Remark:  "from solscan",
+	},
+
 	// ============================== MMK ==============================
 
 	// Wintermute
